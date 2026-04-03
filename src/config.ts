@@ -60,7 +60,7 @@ export const siteConfig = {
     },
     stats: [
       { value: '500+', label: 'Boutiques Using TailorDost' },
-      { value: '8', label: 'Garment Types Supported' },
+      { value: '5000+', label: 'Happy Customers' },
       { value: '99.9%', label: 'Uptime' },
     ],
   },
