@@ -21,7 +21,7 @@ export const featuresContent = [
     icon: 'code',
     title: 'Measurement Recording',
     description:
-      'Capture the exact measurements needed for each garment type. Fields are automatically tailored to the garment — Sherwani, Lehenga Blouse, Blazer, and more.',
+      'Record all customer measurements directly against each order — no paper slips, no lost notebooks, everything stored digitally in one place.',
   },
   {
     icon: 'brush',
@@ -51,12 +51,12 @@ export const featuresContent = [
     icon: 'link',
     title: 'Customer Tracking Links',
     description:
-      'Generate a secure, shareable link for any order and send it to your customer via WhatsApp or SMS. They can check their order status, design references, and photos without calling you. Each link expires after 72 hours.',
+      'Generate a secure, shareable link for any order and send it to your customer via WhatsApp or SMS. They can check their order status, design references, and photos without calling you. Link expiration is configurable.',
   },
   {
     icon: 'team',
     title: 'Tailor Team Access',
     description:
-      'Create a 7-day access link for your tailoring staff that shows all active orders in one place, each labeled Overdue, Due Soon, or Upcoming — so your team can prioritize work without needing your login credentials.',
+      'Create an access link for your tailoring staff that shows all active orders in one place, each labeled Overdue, Due Soon, or Upcoming — so your team can prioritize work without needing your login credentials. Link expiration is configurable.',
   },
 ];

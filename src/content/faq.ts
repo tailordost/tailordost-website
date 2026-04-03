@@ -32,11 +32,11 @@ export const faqItems = [
   {
     question: 'Can customers track their own orders?',
     answer:
-      'Yes. You can generate a secure, shareable tracking link for any order and send it to your customer via WhatsApp or SMS. The customer can open the link without logging in to see the current status of their order, along with design references, fabric details, and photos. Each link expires automatically after 72 hours, and you can deactivate it at any time if it was shared with the wrong contact. You can also generate multiple links for the same order if a new one is needed after the previous one expires.',
+      'Yes. You can generate a secure, shareable tracking link for any order and send it to your customer via WhatsApp or SMS. The customer can open the link without logging in to see the current status of their order, along with design references, fabric details, and photos. Link expiration is configurable, and you can deactivate any link at any time if it was shared with the wrong contact. Multiple links can be generated for the same order as needed.',
   },
   {
     question: 'Can my tailoring staff view orders without accessing my account?',
     answer:
-      'Yes. TailorDost lets you generate a separate tailor team link that shows all active orders in one place. Each order is labeled Overdue, Due Soon, or Upcoming — so your staff can prioritize stitching without needing your login credentials or waiting for you to brief them individually. Tailor links are valid for 7 days by default and can be deactivated at any time from the Tailor Tracking Links page.',
+      'Yes. TailorDost lets you generate a separate tailor team link that shows all active orders in one place. Each order is labeled Overdue, Due Soon, or Upcoming — so your staff can prioritize stitching without needing your login credentials or waiting for you to brief them individually. Link expiration is configurable, and links can be deactivated at any time from the Tailor Tracking Links page.',
   },
 ];

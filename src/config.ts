@@ -13,7 +13,7 @@ export const siteConfig = {
       'Manage custom garment orders, customer measurements, fabric tracking, and payments all in one place. The complete platform for boutique owners who take custom clothing orders.',
     keywords:
       'boutique management, custom garment orders, tailoring software, measurement tracking, order management, boutique owner app',
-    email: 'contact@TailorDost.app',
+    email: 'contact@tailordost.in',
 
     // Open Graph / Twitter
     ogTitle: 'TailorDost - Custom Garment Order Management for Boutiques',
@@ -100,13 +100,6 @@ export const siteConfig = {
   testimonials: {
     title: 'Trusted by Boutique Owners',
     subtitle: 'See what boutique owners and tailors have to say about TailorDost',
-    companyLogos: [
-      'ZARI STUDIO',
-      'SILK & THREAD',
-      'REGAL CUTS',
-      'THE STITCH CO.',
-      'KALAKAR BOUTIQUE',
-    ],
   },
 
   // ============================================
@@ -202,7 +195,7 @@ export const siteConfig = {
       'No credit card required',
       'Dedicated onboarding support',
     ],
-    email: 'contact@TailorDost.app',
+    email: 'contact@tailordost.in',
     form: {
       cta: 'Get Started Free',
       fields: {

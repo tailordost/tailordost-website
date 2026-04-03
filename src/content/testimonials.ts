@@ -10,15 +10,6 @@ export const testimonialsData = [
   },
   {
     quote:
-      'The measurement fields that match each garment type are a game-changer. I no longer need to remember which measurements a Sherwani needs versus a Blazer — TailorDost just shows me exactly what to fill in.',
-    author: 'Kavitha Rajan',
-    role: 'Custom Tailor',
-    company: 'Silk & Thread',
-    initials: 'KR',
-    rating: 5,
-  },
-  {
-    quote:
       'My customers used to send design photos on WhatsApp and I\'d spend 20 minutes hunting for them. Now I upload everything to the order immediately. No more chaos, no more missed details.',
     author: 'Sunita Desai',
     role: 'Boutique Owner',
@@ -37,9 +28,9 @@ export const testimonialsData = [
   },
   {
     quote:
-      'The six-stage order workflow is exactly how we work. I can see at a glance which orders are in stitching, which are ready for trial, and which are overdue. My staff always knows what to work on next.',
+      'My master tailor used to call me every morning asking what to work on next. Since I started sharing the tailor tracking link, he checks it himself and gets straight to work. That alone saves me so much time.',
     author: 'Rekha Iyer',
-    role: 'Head Tailor',
+    role: 'Boutique Owner',
     company: 'Kalakar Boutique',
     initials: 'RI',
     rating: 5,
