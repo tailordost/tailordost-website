@@ -1,0 +1,16 @@
+/* Mono theme — original monochrome palette */
+
+@theme {
+  --color-mono-black: #000000;
+  --color-mono-darker: #171717;
+  --color-mono-dark: #404040;
+  --color-mono-gray: #737373;
+  --color-mono-light: #a3a3a3;
+  --color-mono-lighter: #e5e5e5;
+  --color-mono-white: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}

@@ -1,0 +1,90 @@
+---
+import { siteConfig } from '../config.ts';
+import { Icon } from 'astro-icon/components';
+import { testimonialsData } from '../content/testimonials';
+---
+
+<section class="relative bg-white px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <div class="scroll-fade-up mx-auto mb-16 max-w-3xl text-center">
+      <h2 class="text-mono-black mb-4 text-4xl font-bold sm:text-5xl">
+        {siteConfig.testimonials.title}
+      </h2>
+      <p class="text-mono-dark text-xl">
+        {siteConfig.testimonials.subtitle}
+      </p>
+    </div>
+
+    <div class="mb-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {
+        testimonialsData.map((testimonial, index) => (
+          <div
+            class={`scroll-fade-up border-mono-black bg-mono-lighter rounded-xl border-l-4 p-8 shadow-lg stagger-${(index % 9) + 1}`}
+          >
+            <div class="mb-4 flex">
+              {Array.from({ length: testimonial.rating }).map(() => (
+                <Icon
+                  name="heroicons:star-solid"
+                  class="text-mono-black h-5 w-5"
+                />
+              ))}
+            </div>
+            <p class="text-mono-dark mb-6 leading-relaxed">
+              "{testimonial.quote}"
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="bg-mono-black mr-4 flex h-12 w-12 items-center justify-center rounded-full font-semibold text-white">
+                  {testimonial.initials}
+                </div>
+                <div>
+                  <div class="text-mono-black font-semibold">
+                    {testimonial.author}
+                  </div>
+                  <div class="text-mono-gray text-sm">{testimonial.role}</div>
+                </div>
+              </div>
+              <span class="text-mono-gray text-xs font-medium opacity-60">
+                {testimonial.company}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="scroll-fade-up">
+      <div class="bg-mono-lighter rounded-2xl p-12">
+        <p
+          class="text-mono-gray mb-10 text-center text-sm tracking-wide uppercase"
+        >
+          Trusted by Construction Professionals
+        </p>
+        <div
+          class="mx-auto grid max-w-6xl grid-cols-2 items-center gap-12 sm:grid-cols-3 md:grid-cols-5"
+        >
+          <div class="flex flex-col items-center justify-center gap-3">
+            <div class="text-mono-black flex h-12 w-12 items-center justify-center rounded-lg bg-white text-2xl font-bold shadow-md">B</div>
+            <span class="text-mono-gray text-xs font-medium">BuildPro</span>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <div class="text-mono-black flex h-12 w-12 items-center justify-center rounded-lg bg-white text-2xl font-bold shadow-md">S</div>
+            <span class="text-mono-gray text-xs font-medium">SiteWorks</span>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <div class="text-mono-black flex h-12 w-12 items-center justify-center rounded-lg bg-white text-2xl font-bold shadow-md">C</div>
+            <span class="text-mono-gray text-xs font-medium">ConstructCo</span>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <div class="text-mono-black flex h-12 w-12 items-center justify-center rounded-lg bg-white text-2xl font-bold shadow-md">M</div>
+            <span class="text-mono-gray text-xs font-medium">MegaBuild</span>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <div class="text-mono-black flex h-12 w-12 items-center justify-center rounded-lg bg-white text-2xl font-bold shadow-md">I</div>
+            <span class="text-mono-gray text-xs font-medium">InfraTech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

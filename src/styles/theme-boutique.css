@@ -1,0 +1,87 @@
+/* Boutique theme — maps the existing mono-* utility classes to the boutique
+   palette so all existing component classes continue to work, and also
+   exposes the full boutique color spec as Tailwind utilities. */
+
+@theme {
+  /* ── Mono-* remapping ───────────────────────────────────────────────────
+     These map the existing component classes (text-mono-black, bg-mono-black,
+     border-mono-lighter, etc.) to boutique-appropriate colours. */
+  --color-mono-black: #b8006e; /* primary magenta — CTAs, icons, headings (darkened for contrast) */
+  --color-mono-darker: #c93db3; /* deeper magenta */
+  --color-mono-dark: #d454c1; /* dark blue — body text */
+  --color-mono-gray: #6c757d; /* medium gray */
+  --color-mono-light: #adb5bd; /* light gray */
+  --color-mono-lighter: #f4f5f7; /* very light — section backgrounds */
+  --color-mono-white: #ffffff; /* white */
+
+  /* ── Core brand colours ─────────────────────────────────────────────────*/
+  --color-primary: #b8006e;
+  --color-secondary: #f4f5f7;
+  --color-success: #00f2c3;
+  --color-info: #1d8cf8;
+  --color-warning: #ff8d72;
+  --color-danger: #fd5d93;
+  --color-default: #344675;
+  --color-neutral: #ffffff;
+
+  /* ── Extended palette ───────────────────────────────────────────────────*/
+  --color-blue: #5e72e4;
+  --color-indigo: #5603ad;
+  --color-purple: #8965e0;
+  --color-pink: #f3a4b5;
+  --color-red: #f5365c;
+  --color-orange: #fb6340;
+  --color-yellow: #ffd600;
+  --color-green: #2dce89;
+  --color-teal: #11cdef;
+  --color-cyan: #2bffc6;
+
+  /* ── Neutrals ───────────────────────────────────────────────────────────*/
+  --color-lighter: #e9ecef;
+  --color-light: #adb5bd;
+  --color-gray: #6c757d;
+  --color-gray-dark: #32325d;
+  --color-dark: #212529;
+  --color-darker: #000000;
+
+  /* ── Status badge colours ───────────────────────────────────────────────*/
+  --color-status-paid-bg: #e6f9ee;
+  --color-status-paid-text: #0d7a3e;
+  --color-status-pending-bg: #fff4e5;
+  --color-status-pending-text: #b86e00;
+  --color-status-cancelled-bg: #fde8e8;
+  --color-status-cancelled-text: #c81e1e;
+  --color-status-draft-bg: #f0f0f0;
+  --color-status-draft-text: #6b7280;
+
+  /* ── Step progress colours ──────────────────────────────────────────────*/
+  --color-step-completed: #6366f1;
+  --color-step-pending: #d1d5db;
+  --color-step-active-text: #6366f1;
+  --color-step-active-label: #374151;
+  --color-step-pending-text: #9ca3af;
+
+  /* ── Form & input colours ───────────────────────────────────────────────*/
+  --color-input-label: #1a1a2e;
+  --color-input-border: #ddd;
+  --color-input-focus-border: #6c5ce7;
+  --color-input-focus-ring: rgba(108, 92, 231, 0.1);
+  --color-input-placeholder: #aaa;
+
+  /* ── Image uploader colours ─────────────────────────────────────────────*/
+  --color-dropzone-border: #d1d5db;
+  --color-dropzone-bg: #f9fafb;
+  --color-dropzone-hover-border: #6366f1;
+  --color-dropzone-hover-bg: #eef2ff;
+
+  /* ── Order link colours ─────────────────────────────────────────────────*/
+  --color-order-link: #00f2c3;
+  --color-order-link-border: rgba(0, 242, 195, 0.3);
+  --color-order-link-hover-bg: rgba(0, 242, 195, 0.1);
+}
+
+/* ── App background & base text ─────────────────────────────────────────── */
+body {
+  background-color: #1d1e33;
+  color: #344675;
+}

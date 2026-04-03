@@ -1,0 +1,6 @@
+services:
+  boutique-management-website:
+    build: .
+    container_name: boutique-management-website
+    ports:
+      - 8080:8080
