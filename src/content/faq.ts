@@ -5,11 +5,6 @@ export const faqItems = [
       'TailorDost is a purpose-built order management application for boutique owners who take custom garment orders. It brings the entire order lifecycle — from recording a customer\'s measurements to tracking fabric, stitching progress, and final payment — into one organized platform, replacing paper notebooks, spreadsheets, and scattered WhatsApp messages.',
   },
   {
-    question: 'Which garment types does TailorDost support?',
-    answer:
-      'TailorDost supports eight custom garment types: Sherwani, Salwar Kameez, Kurta Pajama, Blazer, Lehenga Blouse, Suit (3-piece), Nehru Jacket, and Anarkali Suit. When you create an order, the measurement fields shown automatically match the selected garment — so you are always prompted for exactly the right measurements without having to remember them.',
-  },
-  {
     question: 'How does order progress tracking work?',
     answer:
       'Every order in TailorDost moves through a clear six-stage workflow: Pending → Cutting → Stitching → Trial Ready → Completed → Delivered. Moving an order to the next stage is a single click, making it easy to keep records current even in a busy shop. The dashboard surfaces overdue orders and orders due this week so you always know what needs priority attention.',
