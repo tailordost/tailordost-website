@@ -1,0 +1,382 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailorDost - For Boutique Owners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css"
+    />
+    <style>
+      :root {
+        --td-primary: #b8006e;
+        --td-primary-light: #c93db3;
+        --td-dark: #1d1e33;
+        --td-body: #344675;
+        --td-light: #fdf2f8;
+        --td-red: #fd5d93;
+        --td-green: #00f2c3;
+        --td-gray: #6c757d;
+        --td-lighter: #f4f5f7;
+      }
+      .reveal,
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4,
+      .reveal p,
+      .reveal li {
+        font-family: 'Geist', system-ui, -apple-system, sans-serif;
+      }
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        color: var(--td-dark);
+        text-transform: none;
+        letter-spacing: -0.02em;
+      }
+      .reveal h1 {
+        font-size: 2.2em;
+        font-weight: 800;
+      }
+      .reveal h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+      }
+      .reveal h3 {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      .reveal p,
+      .reveal li {
+        font-size: 0.65em;
+        line-height: 1.5;
+        color: var(--td-body);
+      }
+      .reveal .big-text {
+        font-size: 0.8em;
+        color: var(--td-dark);
+        font-weight: 500;
+      }
+      .reveal .pain-card {
+        background: #fff0f6;
+        border-left: 4px solid var(--td-red);
+        border-radius: 8px;
+        padding: 0.3em 0.6em;
+        text-align: left;
+        margin-bottom: 0.35em;
+      }
+      .reveal .pain-card p {
+        margin: 0;
+        font-size: 0.6em;
+        color: #9d174d;
+      }
+      .reveal .fix-card {
+        background: #ecfdf5;
+        border-left: 4px solid var(--td-green);
+        border-radius: 8px;
+        padding: 0.3em 0.6em;
+        text-align: left;
+        margin-bottom: 0.35em;
+      }
+      .reveal .fix-card p {
+        margin: 0;
+        font-size: 0.6em;
+        color: #065f46;
+      }
+      .reveal .hero-box {
+        background: linear-gradient(135deg, var(--td-dark), #2a2b4a);
+        color: #fff;
+        padding: 0.8em 1.2em;
+        border-radius: 16px;
+        margin-top: 0.4em;
+      }
+      .reveal .hero-box h2,
+      .reveal .hero-box h3,
+      .reveal .hero-box p {
+        color: #fff;
+      }
+      .reveal .workflow-bar {
+        display: flex;
+        gap: 0.15em;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0.5em 0;
+      }
+      .reveal .workflow-stage {
+        background: var(--td-primary);
+        color: #fff;
+        padding: 0.25em 0.45em;
+        border-radius: 6px;
+        font-size: 0.5em;
+        font-weight: 700;
+      }
+      .reveal .workflow-arrow {
+        color: var(--td-primary);
+        font-size: 0.6em;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+      }
+      .reveal .benefit-row {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        background: var(--td-lighter);
+        border-radius: 8px;
+        padding: 0.25em 0.5em;
+        margin-bottom: 0.3em;
+        text-align: left;
+      }
+      .reveal .benefit-icon {
+        font-size: 1em;
+        flex-shrink: 0;
+      }
+      .reveal .benefit-row p {
+        margin: 0;
+        font-size: 0.58em;
+        color: var(--td-dark);
+        font-weight: 500;
+      }
+      .reveal .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
+      }
+      .reveal .cta-box {
+        background: var(--td-light);
+        border: 3px solid var(--td-primary);
+        border-radius: 16px;
+        padding: 0.7em 1em;
+        margin-top: 0.5em;
+      }
+      .reveal section {
+        padding: 0.3em;
+      }
+      .reveal .subtitle {
+        color: var(--td-primary);
+        font-weight: 600;
+        font-size: 0.85em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Slide 1: Title -->
+        <section>
+          <img src="/tailor_dost_logo_horiz.png" alt="TailorDost" style="max-height: 100px; margin: 0 auto 0.3em;" />
+          <p class="subtitle">Your boutique, fully organized.</p>
+          <p class="big-text" style="margin-top: 0.8em;">
+            Manage orders, measurements, fabrics, photos &amp; payments
+            &mdash; all in one app.
+          </p>
+        </section>
+
+        <!-- Slide 2: Sound familiar? -->
+        <section>
+          <h2>Does this sound familiar?</h2>
+          <div class="pain-card">
+            <p>"I can't find that customer's measurements &mdash; the notebook page is torn."</p>
+          </div>
+          <div class="pain-card">
+            <p>"Which WhatsApp chat had the design photo? I've been scrolling for 10 minutes."</p>
+          </div>
+          <div class="pain-card">
+            <p>"The customer is calling again &mdash; asking if the order is ready."</p>
+          </div>
+          <div class="pain-card">
+            <p>"My tailor stitched the wrong order first because he didn't know what was urgent."</p>
+          </div>
+          <div class="pain-card">
+            <p>"Did this customer pay the full amount? I can't remember."</p>
+          </div>
+        </section>
+
+        <!-- Slide 3: The cost -->
+        <section>
+          <h2>These small problems add up</h2>
+          <p class="big-text" style="margin-top: 0.5em;">
+            Lost measurements. Missed deadlines. Confused tailors.<br />
+            Angry customers. Money left uncollected.
+          </p>
+          <p style="margin-top: 0.8em; font-size: 0.75em; color: var(--td-primary); font-weight: 600;">
+            What if one app could fix all of this?
+          </p>
+        </section>
+
+        <!-- Slide 4: Introducing TailorDost -->
+        <section>
+          <div class="hero-box">
+            <h2 style="margin-top: 0;">Meet TailorDost</h2>
+            <p style="font-size: 0.75em;">
+              One simple app made specifically for boutique owners like you.
+              <br /><br />
+              No more notebooks. No more WhatsApp searching.
+              No more "is my order ready?" calls.
+            </p>
+          </div>
+        </section>
+
+        <!-- Slide 5: Everything in one place -->
+        <section>
+          <h2>Everything in one place</h2>
+          <div class="benefit-row">
+            <span class="benefit-icon">&#128203;</span>
+            <p>All your customers &amp; their order history</p>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-icon">&#128207;</span>
+            <p>Measurements saved digitally &mdash; never lost again</p>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-icon">&#127912;</span>
+            <p>Design photos &amp; special instructions attached to each order</p>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-icon">&#129525;</span>
+            <p>Fabric type, color &amp; photos &mdash; no more mix-ups</p>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-icon">&#128176;</span>
+            <p>Billing &amp; payment status &mdash; know who owes you</p>
+          </div>
+        </section>
+
+        <!-- Slide 6: Track every order -->
+        <section>
+          <h2>Track every order, one click at a time</h2>
+          <p style="margin-bottom: 0.2em;">Each order moves through clear stages:</p>
+          <div class="workflow-bar">
+            <span class="workflow-stage">Pending</span>
+            <span class="workflow-arrow">&rarr;</span>
+            <span class="workflow-stage">Cutting</span>
+            <span class="workflow-arrow">&rarr;</span>
+            <span class="workflow-stage">Stitching</span>
+            <span class="workflow-arrow">&rarr;</span>
+            <span class="workflow-stage">Trial Ready</span>
+            <span class="workflow-arrow">&rarr;</span>
+            <span class="workflow-stage">Completed</span>
+            <span class="workflow-arrow">&rarr;</span>
+            <span class="workflow-stage">Delivered</span>
+          </div>
+          <p class="big-text">
+            You always know which orders are overdue<br />and what needs attention today.
+          </p>
+        </section>
+
+        <!-- Slide 7: No more customer calls -->
+        <section>
+          <h2>No more "is my order ready?" calls</h2>
+          <p class="big-text" style="margin-bottom: 0.5em;">
+            Send your customer a tracking link on WhatsApp.<br />
+            They check their order status themselves.
+          </p>
+          <div class="fix-card">
+            <p>No login needed. No app download. Just open the link and see the status.</p>
+          </div>
+          <div class="fix-card">
+            <p>They can also see their design photos and fabric details.</p>
+          </div>
+          <div class="fix-card">
+            <p>You control the link &mdash; set expiry or turn it off anytime.</p>
+          </div>
+        </section>
+
+        <!-- Slide 8: Your tailors stay on track -->
+        <section>
+          <h2>Your tailors stay on track</h2>
+          <p class="big-text" style="margin-bottom: 0.5em;">
+            Share one link with your team.<br />
+            They see all active orders with priorities.
+          </p>
+          <div class="two-col">
+            <div class="fix-card">
+              <p><strong>Overdue</strong> orders highlighted in red</p>
+            </div>
+            <div class="fix-card">
+              <p><strong>Due Soon</strong> orders highlighted so they plan ahead</p>
+            </div>
+          </div>
+          <p style="margin-top: 0.4em; font-size: 0.6em; color: var(--td-body);">
+            No need to brief each tailor every morning.<br />
+            They open the link and know exactly what to work on.
+          </p>
+        </section>
+
+        <!-- Slide 9: Before & After -->
+        <section>
+          <h2>Before &amp; After TailorDost</h2>
+          <div class="two-col" style="margin-top: 0.3em;">
+            <div>
+              <div class="pain-card"><p>Searching through notebooks</p></div>
+              <div class="pain-card"><p>Scrolling WhatsApp for photos</p></div>
+              <div class="pain-card"><p>Customers calling for updates</p></div>
+              <div class="pain-card"><p>Tailors waiting for instructions</p></div>
+              <div class="pain-card"><p>Forgetting who paid what</p></div>
+            </div>
+            <div>
+              <div class="fix-card"><p>Everything searchable in seconds</p></div>
+              <div class="fix-card"><p>Photos attached to each order</p></div>
+              <div class="fix-card"><p>Customers check status themselves</p></div>
+              <div class="fix-card"><p>Tailors see priorities on their own</p></div>
+              <div class="fix-card"><p>Payment status always up to date</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 10: Your data is safe -->
+        <section>
+          <h2>Your data is 100% safe</h2>
+          <p class="big-text">
+            Only you can see your customers and orders.<br />
+            Bank-level security. No one else has access.
+          </p>
+        </section>
+
+        <!-- Slide 11: CTA -->
+        <section>
+          <h2>Ready to organize your boutique?</h2>
+          <div class="cta-box">
+            <h3 style="color: var(--td-primary); margin-top: 0;">Start using TailorDost today</h3>
+            <p class="big-text">
+              Simple to use. Made for boutique owners.<br />
+              Your orders, measurements, photos &amp; payments &mdash; all in one place.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <script is:inline src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script is:inline>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        slideNumber: false,
+        hash: false,
+        transition: "slide",
+        center: true,
+        width: 960,
+        height: 700,
+      });
+    </script>
+  </body>
+</html>
