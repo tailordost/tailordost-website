@@ -27,6 +27,8 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          PUBLIC_BOUTIQUES_API: https://app.tailordost.in/api/botics/public-list
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

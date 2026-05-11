@@ -4,6 +4,11 @@
 
 export const siteConfig = {
   // ============================================
+  // BOUTIQUES API (set PUBLIC_BOUTIQUES_API env var to enable)
+  // ============================================
+  boutiquesApi: import.meta.env.PUBLIC_BOUTIQUES_API || '',
+
+  // ============================================
   // SITE METADATA & SEO
   // ============================================
   site: {
@@ -31,7 +36,7 @@ export const siteConfig = {
     links: [
       { name: 'Features', href: '#features' },
       { name: 'How It Works', href: '#how-it-works' },
-      { name: 'Pricing', href: '#pricing' },
+      // { name: 'Pricing', href: '#pricing' },
       { name: 'FAQ', href: '#faq' },
     ],
     cta: {
@@ -196,6 +201,11 @@ export const siteConfig = {
       'Dedicated onboarding support',
     ],
     email: 'contact@tailordost.in',
+    phone: '+123456',
+    salesTeam: [
+      { name: 'Sales1', phone: '+123456', email: 'sales1@tailordost.in' },
+      { name: 'Sales2', phone: '+654321', email: 'sales2@tailordost.in' },
+    ],
     form: {
       cta: 'Get Started Free',
       fields: {
@@ -234,7 +244,7 @@ export const siteConfig = {
         title: 'Product',
         links: [
           { name: 'Features', href: '#features' },
-          { name: 'Pricing', href: '#pricing' },
+          // { name: 'Pricing', href: '#pricing' },
           { name: 'How It Works', href: '#how-it-works' },
         ],
       },

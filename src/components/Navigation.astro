@@ -1,6 +1,11 @@
 ---
 import { siteConfig } from '../config.ts';
 import { Icon } from 'astro-icon/components';
+
+const navLinks = [...siteConfig.navigation.links];
+if (siteConfig.boutiquesApi) {
+  navLinks.push({ name: 'Boutiques', href: '/boutiques' });
+}
 ---
 
 <nav
@@ -16,14 +21,14 @@ import { Icon } from 'astro-icon/components';
 
       <div class="hidden items-center space-x-8 md:flex">
         {
-          siteConfig.navigation.links.map((link) => (
-            <a href={link.href} class="text-white/80 hover:text-white">
+          navLinks.map((link) => (
+            <a href={link.href.startsWith('#') ? `/${link.href}` : link.href} class="text-white/80 hover:text-white">
               {link.name}
             </a>
           ))
         }
         <a
-          href={siteConfig.navigation.cta.href}
+          href={siteConfig.navigation.cta.href.startsWith('#') ? `/${siteConfig.navigation.cta.href}` : siteConfig.navigation.cta.href}
           class="rounded-lg px-6 py-2 font-semibold text-white" style="background-color: #c0257a;"
         >
           {siteConfig.navigation.cta.text}
@@ -44,14 +49,14 @@ import { Icon } from 'astro-icon/components';
     <div id="mobileMenu" class="hidden pb-4 md:hidden" aria-hidden="true">
       <div class="flex flex-col space-y-3">
         {
-          siteConfig.navigation.links.map((link) => (
-            <a href={link.href} class="py-2 text-white/80 hover:text-white">
+          navLinks.map((link) => (
+            <a href={link.href.startsWith('#') ? `/${link.href}` : link.href} class="py-2 text-white/80 hover:text-white">
               {link.name}
             </a>
           ))
         }
         <a
-          href={siteConfig.navigation.cta.href}
+          href={siteConfig.navigation.cta.href.startsWith('#') ? `/${siteConfig.navigation.cta.href}` : siteConfig.navigation.cta.href}
           class="rounded-lg px-6 py-3 text-center font-semibold text-white" style="background-color: #c0257a;"
         >
           {siteConfig.navigation.cta.text}
